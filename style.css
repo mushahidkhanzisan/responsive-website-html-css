@@ -55,7 +55,7 @@ nav ul li a:hover, nav ul .active{
     display: none;
 }
 
-/* responsive work start */
+/* nav bar media query code start */
 
 @media only screen and (max-width: 940px){
     .menu-btn{
@@ -94,3 +94,77 @@ nav ul li a:hover, nav ul .active{
         background: none;
     }
 }
+
+/* header section code start */
+
+header{
+    background-image: url('images/banner.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main section code here */
+
+ 
+ #main-section-container{
+    background-color: #1C2833;
+    padding-bottom: 100px;
+ }
+
+ #main-section-container > h2{
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: .2em;
+    color: white;
+    padding: 50px 0;
+ }
+.services-parent{
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+
+.single-item-div{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 5px 5px 5px gray;
+    border: 2px solid green;
+    border-radius: 5px;
+    color: black;
+}
+.single-item-div i{
+    font-size: 40px;
+}
+.single-item-div > h2{
+    padding: 10px 0;
+    font-weight: bold;
+}
+.single-item-div p{
+    font-weight: 600;
+}
+ 
+/* first section of main tag media  query code start */
+
+@media only screen and (max-width: 688px){
+    .services-parent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        width: 100%;
+    }  
+    
+}
+
+@media only screen and (min-width: 689px) and (max-width: 1099px){
+    .services-parent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+    }
+} 
