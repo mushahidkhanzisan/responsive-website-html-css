@@ -216,8 +216,9 @@ header{
     margin-bottom: 15px;
     font-size: 20px;
 }
-.about-text-item ul{
+.about-text-item ul li{
  margin: 15px 0;
+ list-style-position: inside;
 }
 .about-text-item a{
     display: inline-block;
@@ -409,6 +410,35 @@ form p{
     letter-spacing: 0.2em;
 }
 
+/* seventh section code start here */
+#seventh-section{
+    padding: 100px 0;
+}
+.takecare-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 30px;
+}
+.takecare-img{
+    width: 100%;
+}
+.takecare-img img{
+    width: 100%;
+}
+.takecare-text h3{
+    font-size: 30px;
+}
+.takecare-text p{
+    margin: 20px 0;
+}
+.takecare-text ul li{
+    list-style-position: inside;
+    margin: 10px 0;
+}
+
 
 
  
@@ -493,6 +523,16 @@ form p{
     .firat-single-match{
         text-align: center;
     }
+
+    /* seventh section code here */
+    .takecare-parent{
+        display: block;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .takecare-text{
+        margin-bottom: 40px;
+    }
 }
 
 @media only screen and (min-width: 689px) and (max-width: 1099px){
@@ -566,6 +606,16 @@ form p{
     }
     .firat-single-match{
         text-align: center;
+    }
+
+    /* seventh section code here */
+    .takecare-parent{
+        display: block;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .takecare-text{
+        margin-bottom: 80px;
     }
 
 } 
